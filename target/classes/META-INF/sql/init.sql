@@ -1,0 +1,13 @@
+insert into Cartinha (nome, pais, rating, data, descricao) values ('Ranger', 'Brasil', 100, '2023-02-22', 'The GOAT' ); 
+insert into Cartinha (nome, pais, rating, data, descricao) values ('Mylon', 'Brasil', 99, '2023-02-22', 'God''s fury' );
+insert into Cartinha (nome, pais, rating, data, descricao) values ('Baiano', 'Brasil', 99, '2023-02-22', 'Mask Off' );
+insert into Cartinha (nome, pais, rating, data, descricao) values ('EsA', 'Korea', 98, '2023-02-22', 'Guerilla Tristana' );
+insert into Cartinha (nome, pais, rating, data, descricao) values ('Brucer', 'Brasil', 02, '2023-02-22', 'No farm Lucian' );
+insert into Time (nome, rating, data) values ('RED CANIDS', 70, '2023-01-22');
+insert into Time (nome, rating, data) values ('RED CANIDS', 72, '2023-01-29');
+insert into Time (nome, rating, data) values ('RED CANIDS', 79, '2023-02-05');
+insert into Time (nome, rating, data) values ('RED CANIDS', 81, '2023-02-12');
+insert into Time (nome, rating, data) values ('FLUXO', 70, '2023-01-22');
+insert into Time (nome, rating, data) values ('FLUXO', 65, '2023-01-29');
+insert into Time (nome, rating, data) values ('FLUXO', 80, '2023-02-05');
+insert into Time (nome, rating, data) values ('FLUXO', 76, '2023-02-12');

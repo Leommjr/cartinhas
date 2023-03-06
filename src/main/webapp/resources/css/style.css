@@ -1,0 +1,101 @@
+/* General styles */
+@import url('https://fonts.googleapis.com/css2?family=Electrolize&display=swap');
+* {
+  box-sizing: border-box;
+  font-family: 'Electrolize', sans-serif;
+  
+}
+html,
+body {
+   margin:0;
+   padding:0;
+   height:100%;
+}
+
+body {
+  background: #e8e6e6;
+  min-height:100vh;
+  display:flex; 
+  flex-direction:column; 
+  justify-content:space-between;
+}
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+  border-style: ridge;
+  color: #000;
+  background: #f7f7f7;
+  text-align: center;
+}
+
+/* Header styles */
+header {
+  background: rgb(0,0,0);
+  background: linear-gradient(180deg, rgba(0,0,0,1) 40%, rgba(125,77,232,1) 88%, rgba(75,56,242,1) 100%);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px;
+}
+
+.navbar {
+  background: linear-gradient(180deg, rgba(0,0,0,1) 40%, rgba(125,77,232,1) 88%, rgba(75,56,242,1) 100%);
+  color: #fff;
+}
+
+header img {
+  max-width: 50px;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+th:hover {
+  background-color: #ddd;
+}
+
+td {
+  border-bottom: 1px solid #ddd;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tr:hover {
+  background-color: #ddd;
+}
+footer {
+  background: rgb(0,0,0);
+  background: linear-gradient(180deg, rgba(0,0,0,1) 40%, rgba(125,77,232,1) 88%, rgba(75,56,242,1) 100%);
+  color: #fff;
+  position: relative;
+  padding: 20px 0;
+}
+footer p {
+	text-align: center;
+	position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+
+/* Card styles */
+.card {
+  border: 1px solid #ddd;
+  padding: 10;
+}

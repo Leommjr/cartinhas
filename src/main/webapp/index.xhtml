@@ -1,0 +1,33 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:f="http://xmlns.jcp.org/jsf/core"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	template="WEB-INF/template/Layout.xhtml" >
+
+	<ui:define name="titulo">
+		Cartinhas CBLOL
+	</ui:define>
+	<ui:define name="conteudo">
+		<f:event type="postAddToView" listener="#{cblol.allCards}" />
+		<p:lineChart model="#{lineChartBean.lineModel}" />
+		<h:form>
+			<div id="cards-container">
+				<p:dataTable id="card-table" value="#{cblol.cards}" var="card">
+					<p:column sortBy="#{card.playerName}" filterBy="#{card.playerName}">
+						<f:facet name="header">Jogador</f:facet>
+						<h:outputText value="#{card.playerName}" />
+					</p:column>
+					<p:column sortBy="#{card.country}" filterBy="#{card.country}">
+						<f:facet name="header">País</f:facet>
+						<h:outputText value="#{card.country}" />
+					</p:column>
+					<p:column sortBy="#{card.rating}">
+						<f:facet name="header">Nota</f:facet>
+						<h:outputText value="#{card.rating}" />
+					</p:column>
+				</p:dataTable>
+			</div>
+		</h:form>
+	</ui:define>
+</ui:composition>
