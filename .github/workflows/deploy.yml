@@ -68,7 +68,7 @@ jobs:
           # SSH key (copy it from your local machine)
           key: ${{ secrets.AWS_KEY }}
           # SSH port
-          port: ${{ secretsAWS_PORT }}
+          port: ${{ secrets.AWS_PORT }}
           source: "docker-compose.yml"
           target: "/var/tmp"
           script: |
