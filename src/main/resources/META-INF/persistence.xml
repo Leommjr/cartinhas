@@ -8,10 +8,10 @@
 		<class>br.com.ilhadaslendas.cartinhas.model.CBLOLTeam</class>
 		<properties>
 			<property name="javax.persistence.jdbc.url"
-				value="jdbc:mysql://localhost:3306/mydb" />
-			<property name="javax.persistence.jdbc.user" value="root" />
+				value="jdbc:mysql://localhost:3306/${env.MYSQL_DB_NAME}" />
+			<property name="javax.persistence.jdbc.user" value="${env.MYSQL_DB_USERNAME}" />
 			<property name="javax.persistence.jdbc.password"
-				value="sdWEopKL@#90" />
+				value="${env.MYSQL_DB_PASSWORD}" />
 			<property name="javax.persistence.jdbc.driver"
 				value="com.mysql.jdbc.Driver" />
 			<property
