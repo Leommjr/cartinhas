@@ -86,7 +86,7 @@ jobs:
           # SSH port
           port: ${{ secrets.AWS_PORT }}
           script: |
-            ls /var/tmp
-            docker-compose -f /var/tmp/docker-compose.yml down
-            docker-compose -f /var/tmp/docker-compose.yml up
+            docker compose -f /var/tmp/docker-compose.yml down
+            docker compose -f /var/tmp/docker-compose.yml pull myapp
+            docker compose -f /var/tmp/docker-compose.yml up &
   

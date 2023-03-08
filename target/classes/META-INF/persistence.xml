@@ -8,15 +8,17 @@
 		<class>br.com.ilhadaslendas.cartinhas.model.CBLOLTeam</class>
 		<properties>
 			<property name="javax.persistence.jdbc.url"
-				value="jdbc:mysql://localhost:3306/mydb" />
+				value="jdbc:mysql://mysql:3306/mydb" />
 			<property name="javax.persistence.jdbc.user" value="root" />
 			<property name="javax.persistence.jdbc.password"
-				value="sdWEopKL@#90" />
+				value="teste12345" />
 			<property name="javax.persistence.jdbc.driver"
 				value="com.mysql.jdbc.Driver" />
 			<property
 				name="javax.persistence.schema-generation.database.action"
 				value="drop-and-create" />
+
+			<property name="hibernate.dialect" value="org.hibernate.dialect.MySQL8Dialect"/>
 			<property
 				name="javax.persistence.schema-generation.create-source"
 				value="metadata" />

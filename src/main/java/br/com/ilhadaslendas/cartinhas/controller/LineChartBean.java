@@ -88,7 +88,6 @@ public class LineChartBean {
 				localteams.add(ltime);
 			}
 		}
-		System.out.println(localteams);
 		teams = localteams;
 		
 	}
