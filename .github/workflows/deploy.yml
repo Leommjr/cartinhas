@@ -72,7 +72,7 @@ jobs:
           source: "docker-compose.yml,run.sh"
           target: "/var/tmp"
           
-      - name: Run docker-compose
+      - name: Change run permissions 
         uses: appleboy/ssh-action@master
         with:
           # VPS IP
@@ -87,4 +87,8 @@ jobs:
           port: ${{ secrets.AWS_PORT }}
           script: |
             chmod +x /var/tmp/run.sh
-            nohup /var/tmp/run.sh
+      - name: Deploy app with webhook
+        uses: joelwmale/webhook-action@master
+        env:
+          WEBHOOK_URL: ${{ secrets.AWS_HOST }}
+
