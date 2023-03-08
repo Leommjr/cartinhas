@@ -69,7 +69,7 @@ jobs:
           key: ${{ secrets.AWS_KEY }}
           # SSH port
           port: ${{ secrets.AWS_PORT }}
-          source: "docker-compose.yml"
+          source: "docker-compose.yml,run.sh"
           target: "/var/tmp"
           
       - name: Run docker-compose
@@ -86,7 +86,5 @@ jobs:
           # SSH port
           port: ${{ secrets.AWS_PORT }}
           script: |
-            docker compose -f /var/tmp/docker-compose.yml down
-            docker compose -f /var/tmp/docker-compose.yml pull myapp
-            docker compose -f /var/tmp/docker-compose.yml up &
-  
+            chmod +x /var/tmp/run.sh
+            nohup /var/tmp/run.sh
