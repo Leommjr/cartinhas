@@ -91,7 +91,7 @@ jobs:
         uses: joelwmale/webhook-action@master
         env:
           WEBHOOK_URL: 
-            ${{ format('http://{0}:9000/hooks/deploy}', secrets.AWS_HOST) }}
+            ${{ format('http://{0}:9000/hooks/deploy', secrets.AWS_HOST) }}
 
 
 
