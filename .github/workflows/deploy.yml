@@ -90,5 +90,9 @@ jobs:
       - name: Deploy app with webhook
         uses: joelwmale/webhook-action@master
         env:
-          WEBHOOK_URL: ${{ secrets.AWS_HOST }}
+          WEBHOOK_URL: 
+            ${{ format('http://{0}:9000/hooks/deploy}', secrets.AWS_HOST) }}
+
+
+
 
